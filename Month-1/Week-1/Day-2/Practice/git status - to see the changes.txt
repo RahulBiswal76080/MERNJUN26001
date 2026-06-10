@@ -1,0 +1,5 @@
+git status - to see the changes
+
+git add .
+git commit -m "this is 1st commit"
+git push
