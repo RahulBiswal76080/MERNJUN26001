@@ -1,0 +1,100 @@
+/*Selectors*/
+
+    /*Types of selectors
+        =>simple selector
+        =>id selector
+        =>class selector
+        =>tag name selector
+        =>group name selector
+        =>universal selector*/
+
+#paragraph{
+    background-color: aqua;
+}
+.p-class{
+    color: coral;
+}
+h1{
+    background-color: blue;
+}
+#paragraph,h1{
+    font-style: italic;
+}
+/*Universal selector*/
+/*
+*{
+    font-family: fantasy;
+}
+*/
+
+/*=>Combinator selector
+    ->Descendent selector
+    ->Child selector
+    ->Adjacent sibling selector
+    ->General sibling selector*/
+
+.parent p{
+    background-color: chartreuse;
+}
+.parent>p{
+    color: crimson;
+}
+
+.parent+ div{
+    color: rgb(40, 8, 249);
+}
+
+.parent~ div{
+    background-color: rgb(94, 246, 7);
+}
+
+/* => pseudo class selector
+    -
+    ->hover
+    ->active
+    ->focus
+    ->first-child
+    ->last-child
+    ->nth-child*/
+
+    section{
+        width: 100px;
+        height: 200px;
+        background-color: blue
+    }
+ section:hover{
+    background-color: red;
+    font-size: 20px;
+ }
+
+ section:active{
+    background-color: green;
+ }
+
+ input:focus{
+    background-color: yellow;
+ }
+
+ li:first-child{
+    background-color: cyan;
+ }
+    li:last-child{
+        background-color: magenta;
+    }
+
+    li:nth-child(3){
+        background-color: orange;
+    }
+*{
+    box-sizing: border-box;
+}
+    /* box model */
+
+.box{
+    width: 100px;
+    height: 100px;
+    padding: 10px 5px;
+    border: 10px dotted red;
+    margin: 100px 300px;
+    margin-left: 400px;
+}
